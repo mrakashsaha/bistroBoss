@@ -32,9 +32,10 @@ const TestiMonial = () => {
                             <SwiperSlide key={review._id}>
                                 <div className='flex mx-24 flex-col items-center m-24'>
                                     <Rating
+                                        readOnly
                                         style={{ maxWidth: 180 }}
                                         value={review.rating}
-                                        onChange={setRating}
+                                        
                                     />
                                     <p className='py-8'>{review?.details}</p>
                                     <h3 className='text-2xl text-[#BB8506]'>{review.name}</h3>
